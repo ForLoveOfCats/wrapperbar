@@ -14,9 +14,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, Gio
 
 def internal_set_titlebar(self, titlebar): #Gets passed either a None or a HeaderBar instance.
-	position = self.get_position() #Get window position
 	self.set_titlebar(titlebar) #Sets titlebar. If passed a None Server Side Decorations are used, otherwise the HeaderBar is loaded.
-	self.move(position[0], position[1]) #As window position is lost this moves the newly reinitialized window to original position.
 
 def make_wrapper(self):
 	self.wrapperbar_start = Gtk.Box(spacing=6) #Initialize wrapperbar left container

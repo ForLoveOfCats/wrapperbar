@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 '''
 Simple wrapper around Gtk3 HeaderBar when using pyGobject allowing for a the HeaderBar to be enabled/disabled
 while running without losing access to buttons placed in the HeaderBar. See wrapper_example.py for a usage example.
